@@ -68,7 +68,9 @@ input:focus {
     border: none;
     margin: 0 10px;
     height: 30px;
-    cursor: pointer;
+    cursor: pointer
+}
+input[type="color"]{
     background-color: transparent
 }
 #gradient {
