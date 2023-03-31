@@ -81,9 +81,8 @@ input:focus {
     padding: 20px 30px;
     text-align: left;
     font-size: 16px;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
-    border-bottom:1px solid #eee
+    color: #29323c;
+    border-top:1px solid #29323c
 }
 footer {
     margin-bottom: 0;
