@@ -81,6 +81,8 @@ input:focus {
     font-size: 16px;
     color: #29323c;
     border-top:1px solid #29323c;
+    width: 100%;
+    word-break: break-all
 }
 footer {
     margin-bottom: 0;
