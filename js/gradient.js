@@ -4,31 +4,28 @@ var number        = document.getElementById("nmbrcolr"),
     degree        = document.getElementById("degree"),
     gradient      = document.getElementById("gradient"),
     textGradient  = document.getElementById("textGradient");
-
 number.onkeyup = function () {
     "use strict";
-    if (number.value < 2) {
-        number.value = 2; 
+    if (number.value < 2 || number.value == " ") {
+        continputcolr.innerHTML = "";
+        continputcolr.textContent = "Please enter a number greater than 1 and less than or equal to 10, as well as spaces or zeros are not acceptable." 
     } else if (number.value > 10) {
         number.value = 10; 
-    }
-    continputcolr.innerHTML = "";
-    for (var i = 0; i < nmbrcolr.value; i++) {
-    var inpcolr = document.createElement("input");
-    inpcolr.type = "color";
-    inpcolr.style.border="none";
-    inpcolr.style.margin=" 0 10px";
-    inpcolr.style.height="30px";
-    inpcolr.style.backgroundColor="#005164";
-    continputcolr.appendChild(inpcolr);
+    } else {
+        continputcolr.innerHTML = "";
+        for (var i = 0; i < nmbrcolr.value; i++) {
+            var inpcolr = document.createElement("input");
+            inpcolr.type = "color";
+            continputcolr.appendChild(inpcolr);
+        }
     }
 }
 degree.onkeyup = function() {
     "use strict";
     if (degree.value < 0 ) {
-    degree.value = 0; 
+        degree.value = 0; 
     }else if (degree.value > 360) {
-    degree.value = 360; 
+        degree.value = 360; 
     }
 }
 Merge.onclick = function() {
